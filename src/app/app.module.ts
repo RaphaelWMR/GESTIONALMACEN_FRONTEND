@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { ListPedidosComponent } from './components/list-pedidos/list-pedidos.component';
 import { AddEditPedidoComponent } from './components/add-edit-pedido/add-edit-pedido.component';
+import { RegistroPedidoComponent } from './components/registro-pedido/registro-pedido.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     ListPedidosComponent,
-    AddEditPedidoComponent
+    AddEditPedidoComponent,
+    RegistroPedidoComponent
   ],
   imports: [
     BrowserModule,
