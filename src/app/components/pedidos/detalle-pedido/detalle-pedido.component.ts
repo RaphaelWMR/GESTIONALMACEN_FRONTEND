@@ -29,4 +29,8 @@ export class DetallePedidoComponent implements OnInit {
 
   }
 
+  agregarFila() {
+    //agrega fila a la tabla
+  }
+
 }
