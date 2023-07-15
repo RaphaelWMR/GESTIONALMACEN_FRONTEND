@@ -1,7 +1,7 @@
 <div class="container">
     <div class="tittle p-2">
         <h4>Maestro de Pedidos</h4>
-        <button type="button" class="btn btn-primary">Nuevo</button>
+        <button type="button" routerLink="/nuevoPedido" class="btn btn-primary">Nuevo</button>
     </div>
     <table class="table table-hover">
         <thead>
@@ -20,7 +20,7 @@
                 <td>{{item.solicitante}}</td>
                 <td>{{item.estado}}</td>
                 <td>
-                    <button class="btn btn-info m-1">Ver detalle</button>
+                    <button routerLink="/detallePedido/{{item.id}}" class="btn btn-info m-1">Ver detalle</button>
                     <button class="btn btn-warning m-1">Modificar</button>
                     <button class="btn btn-danger m-1">Eliminar</button>
                 </td>
