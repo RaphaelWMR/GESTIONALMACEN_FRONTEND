@@ -6,7 +6,7 @@
     <table class="table table-hover">
         <thead>
             <tr class="table-dark">
-                <th scope="col">ID</th>
+                <th scope="col">Codigo</th>
                 <th scope="col">Fecha</th>
                 <th scope="col">Solicitante</th>
                 <th scope="col">Estado</th>
@@ -21,7 +21,7 @@
                 <td>{{item.estado}}</td>
                 <td>
                     <button routerLink="/detallePedido/{{item.id}}" class="btn btn-info m-1">Ver detalle</button>
-                    <button class="btn btn-warning m-1">Modificar</button>
+                    <button routerLink="/modificarPedido/{{item.id}}" class="btn btn-warning m-1">Modificar</button>
                     <button class="btn btn-danger m-1">Eliminar</button>
                 </td>
             </tr>

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Pedido } from 'src/app/interfaces/pedido';
+import { PedidoService } from 'src/app/services/pedido.service';
 
 @Component({
   selector: 'app-list-pedidos',
@@ -9,15 +10,19 @@ import { Pedido } from 'src/app/interfaces/pedido';
 export class ListPedidosComponent implements OnInit {
 
   listPedidos: Pedido[] = [
-    { id: 1, fecha: '2018-05-24', solicitante: 'Psicologia', estado: 'Activo' },
-    { id: 2, fecha: '2018-06-19', solicitante: 'Biblioteeca', estado: 'Activo' }
   ]
 
-  constructor() {
+  constructor(private _pedidoService: PedidoService) {
 
   }
   ngOnInit(): void {
-    throw new Error('Method not implemented.');
+    this.getListPedidos();
+  }
+
+  getListPedidos() {
+    this._pedidoService.getListPedidos().subscribe((data: Pedido[]) => {
+      this.listPedidos = data;
+    })
   }
 
 }

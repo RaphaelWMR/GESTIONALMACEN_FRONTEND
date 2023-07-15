@@ -1,0 +1,31 @@
+<div class="container">
+    <div class="m-2">
+        <form>
+            <fieldset>
+                <legend>Modioficar articulo de pedido {{idPedido}}</legend>
+                <div class="form-group">
+                    <label for="exampleTextarea" class="form-label mt-4">{{idArticulo}}</label>
+                    <textarea class="form-control" id="exampleTextarea" rows="1" disabled>##</textarea>
+                </div>
+                <!--Solicitante-->
+                <div class="form-group">
+                    <label for="exampleSelect1" class="form-label mt-4">Articulo</label>
+                    <select class="form-select" id="exampleSelect1">
+                        <option>a</option>
+                        <option>a</option>
+                    </select>
+                </div>
+                <!--Fecha de emision-->
+                <div class="form-group">
+                    <label for="formFile" class="form-label mt-4">Cantidad</label>
+                    <input class="form-control" type="number" id="formFile">
+                </div>
+
+                <div class="d-flex justify-content-center mt-5">
+                    <button type="submit" class="btn btn-success m-2">Registrar</button>
+                    <button class="btn btn-danger m-2" routerLink="/maestroPedidos">Cancelar</button>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+</div>

@@ -1,0 +1,30 @@
+<div class="container">
+    <div class="m-2">
+        <form>
+            <fieldset>
+                <legend>Nuevo Articulo</legend>
+                <div class="form-group">
+                    <label for="exampleTextarea" class="form-label mt-4">ID</label>
+                    <textarea class="form-control" id="exampleTextarea" rows="1"></textarea>
+                </div>
+                <!--Solicitante-->
+                <div class="form-group">
+                    <label for="exampleSelect1" class="form-label mt-4">Solicitante</label>
+                    <select class="form-select" id="exampleSelect1">
+                        <option *ngFor="let item of solicitante">{{item.nombre}}</option>
+                    </select>
+                </div>
+                <!--Fecha de emision-->
+                <div class="form-group">
+                    <label for="formFile" class="form-label mt-4">Fecha de emision</label>
+                    <input class="form-control" type="date" id="formFile">
+                </div>
+
+                <div class="d-flex justify-content-center mt-5">
+                    <button type="submit" class="btn btn-success m-2">Registrar</button>
+                    <button class="btn btn-danger m-2" (click)="redirigirAMaestroArticulos()">Cancelar</button>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+</div>
