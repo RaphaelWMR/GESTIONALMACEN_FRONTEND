@@ -2,10 +2,11 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 //Compoenents
-import { ListPedidosComponent } from './components/list-pedidos/list-pedidos.component';
-import { RegistroPedidoComponent } from './components/registro-pedido/registro-pedido.component';
+import { ListPedidosComponent } from './components/pedidos/list-pedidos/list-pedidos.component';
+import { RegistroPedidoComponent } from './components/pedidos/registro-pedido/registro-pedido.component';
 import { Eror404Component } from './components/eror404/eror404.component';
-import { DetallePedidoComponent } from './components/detalle-pedido/detalle-pedido.component';
+import { DetallePedidoComponent } from './components/pedidos/detalle-pedido/detalle-pedido.component';
+
 
 const routes: Routes = [
   { path: 'maestroPedidos', component: ListPedidosComponent },
